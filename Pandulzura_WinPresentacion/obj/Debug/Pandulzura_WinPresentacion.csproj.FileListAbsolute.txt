@@ -1,0 +1,77 @@
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.exe.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.exe
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.dll.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.dll.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormRol.resources
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.Properties.Resources.resources
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.GenerateResource.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzu.1AAFF9AB.Up2Date
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.exe
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Documentos\San Israel\ProgramacionII\proyectos\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.exe.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.exe
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.dll.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.dll.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.AssemblyReference.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormRol.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.Properties.Resources.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.GenerateResource.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.CopyComplete
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.exe
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormCategorias.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormProductos.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.exe.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.exe
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.dll
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.dll.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.pdb
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.dll.config
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.AssemblyReference.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormCategorias.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormDetallePedido.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormProductos.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormRol.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.Properties.Resources.resources
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.GenerateResource.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.CopyComplete
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.exe
+C:\Users\wosun\OneDrive\Documents\U-Israel\PanDulzura2.0\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.exe.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.exe
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_AccesoDatos.dll.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\bin\Debug\Pandulzura_LogicaNegocio.dll.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormCategorias.resources
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormDetallePedido.resources
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormProductos.resources
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormRol.resources
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.Properties.Resources.resources
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.GenerateResource.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzu.1AAFF9AB.Up2Date
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.exe
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\Proyecto_PanDulzura\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormUser.resources
