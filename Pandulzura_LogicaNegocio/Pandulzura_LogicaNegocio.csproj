@@ -48,6 +48,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pandulzura.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PedidosLogica.cs" />
     <Compile Include="ProductoLogica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
