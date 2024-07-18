@@ -146,6 +146,7 @@
             this.Controls.Add(this.dgvRol);
             this.Controls.Add(this.btnListar);
             this.Name = "FormRol";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRol";
             this.Load += new System.EventHandler(this.FormRol_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRol)).EndInit();

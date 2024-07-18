@@ -283,6 +283,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label9);
             this.Name = "FormUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormUser";
             this.Load += new System.EventHandler(this.FormUser_Load);
             this.groupBox1.ResumeLayout(false);

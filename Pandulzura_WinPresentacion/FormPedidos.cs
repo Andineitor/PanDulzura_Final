@@ -38,12 +38,9 @@ namespace Pandulzura_WinPresentacion
         public void InsertarPedido()
         {
             nuevoPedido.PedidoId = txtPedido.TabIndex;
-            //nuevoPedido.UsuarioId = txtUsuario.TabIndex;
             nuevoPedido.FechaPedido = DateTime.Value;
             nuevoPedido.UsuarioId = int.Parse(cbxUser.SelectedValue.ToString());
             nuevoPedido.EstadoPedido = (Pedidos.Estado)cbxEstado.SelectedItem;
-            
-            //cbxEstado.DataSource = Enum.GetValues(typeof(Pedidos.Estado));
 
             if (pedidosLogica.InsertarPedido(nuevoPedido))
             {
@@ -70,4 +67,3 @@ namespace Pandulzura_WinPresentacion
         }
     }
 }
-

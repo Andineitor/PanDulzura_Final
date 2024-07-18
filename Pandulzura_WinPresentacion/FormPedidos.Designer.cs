@@ -166,6 +166,7 @@
             this.Controls.Add(this.txtPedido);
             this.Controls.Add(this.label1);
             this.Name = "FormPedidos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPedidos";
             this.Load += new System.EventHandler(this.FormPedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgListarPedidos)).EndInit();

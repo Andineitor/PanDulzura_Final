@@ -97,3 +97,4 @@ C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_WinPresentacion\obj\Debug\Pandul
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_WinPresentacion\obj\Debug\Pandulzu.1AAFF9AB.Up2Date
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.exe
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.pdb
+C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_WinPresentacion\obj\Debug\Pandulzura_WinPresentacion.FormPrincipal.resources
