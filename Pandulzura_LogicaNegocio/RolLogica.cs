@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,5 +41,35 @@ namespace Pandulzura_LogicaNegocio
                 throw new Exception("Error: " + ex.Message);
             }
         }
+
+        // Eliminar
+        public bool EliminarRol(int idRol)
+        {
+            try
+            {
+                rolDao.EliminarRol(idRol);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
+
+
+
+        // Buscar
+        public Rol BuscarRol(int idRol)
+        {
+            try
+            {
+                return rolDao.BuscarRol(idRol);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
     }
 }
+

@@ -34,7 +34,7 @@ namespace Pandulzura_WinPresentacion
         //Insertar
         public void insertarRol()
         {
-            nuevoRol.IdRol = txtRol.Text;
+            //nuevoRol.IdRol = txtRol.TabIndex;
             nuevoRol.NombreRol = txtNombre.Text;
             if (rolLogica.InsertarRol(nuevoRol))
             {
@@ -47,6 +47,8 @@ namespace Pandulzura_WinPresentacion
 
             }
         }
+
+
         private void LimpiarCampos()
         {
             // Limpiar el contenido de los TextBox u otros controles que desees limpiar
@@ -54,6 +56,53 @@ namespace Pandulzura_WinPresentacion
             txtNombre.Clear();
             // Agrega más líneas para limpiar otros campos si es necesario
         }
+
+        //Eliminar
+        private void EliminarRol()
+        {
+            try
+            {
+                int idRol = Convert.ToInt32(txtRol.Text); // Asegúrate de tener un TextBox para ingresar el ID del usuario a eliminar
+                if (rolLogica.EliminarRol(idRol))
+                {
+                    MessageBox.Show("Usuario eliminado correctamente");
+                    LimpiarCampos(); // Limpia los campos del formulario después de eliminar
+                  
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar usuario");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar usuario: " + ex.Message);
+            }
+        }
+
+        //Buscar
+        public void buscarRol()
+        {
+            if (int.TryParse(txtRol.Text, out int idRol))
+            {
+                Rol rol = rolLogica.BuscarRol(idRol);
+                if (rol != null)
+                {
+                    txtNombre.Text = rol.NombreRol;
+                }
+                else
+                {
+                    MessageBox.Show("Rol no encontrado");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor ingrese un ID de rol válido");
+            }
+        }
+
+
+
         private void FormRol_Load(object sender, EventArgs e)
         {
             listarRol();
@@ -95,6 +144,25 @@ namespace Pandulzura_WinPresentacion
 
         }
 
-      
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            buscarRol();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            EliminarRol();
+            listarRol();
+        }
     }
 }

@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Pandulzura_AccesoDatos.Entidades;
 
 namespace Pandulzura_AccesoDatos.DAO
@@ -15,13 +11,15 @@ namespace Pandulzura_AccesoDatos.DAO
         SqlCommand ejecutarSql = new SqlCommand();
         SqlDataReader transaccion;
 
-        //crud
+        // Insertar
         public void InsertarRol(Rol nuevoRol)
         {
             ejecutarSql.Connection = conexion.AbrirConexion();
             try
             {
-                ejecutarSql.CommandText = "insert into roles(roles_id, nombre_rol)" + "values('" + nuevoRol.IdRol + "','" + nuevoRol.NombreRol + "')";
+                ejecutarSql.CommandText = "INSERT INTO roles(nombre_rol) VALUES (@NombreRol)";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@NombreRol", nuevoRol.NombreRol);
                 ejecutarSql.ExecuteNonQuery();
                 conexion.CerrarConexion();
             }
@@ -31,29 +29,75 @@ namespace Pandulzura_AccesoDatos.DAO
             }
         }
 
-        //lista
-        public DataTable ListarRol() {
+        // Listar
+        public DataTable ListarRol()
+        {
             DataTable dt = new DataTable();
             try
             {
-                //conectar a la bd
                 ejecutarSql.Connection = conexion.AbrirConexion();
-
-                //sacar la inf
-                ejecutarSql.CommandText = "Select roles_id, nombre_rol from roles";
+                ejecutarSql.CommandText = "SELECT roles_id, nombre_rol FROM roles";
+                ejecutarSql.Parameters.Clear();
                 transaccion = ejecutarSql.ExecuteReader();
-
-                // almacenar resultado de la query
                 dt.Load(transaccion);
                 conexion.CerrarConexion();
-
-                //retornar query
                 return dt;
             }
-            catch (Exception ex){
-                    throw new Exception("Error al listar roles: " + ex.Message);
-                }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al listar roles: " + ex.Message);
             }
         }
-    
+
+        // Eliminar
+        public void EliminarRol(int idRol)
+        {
+            try
+            {
+                ejecutarSql.Connection = conexion.AbrirConexion();
+                ejecutarSql.CommandText = "DELETE FROM roles WHERE roles_id = @IdRol";
+                ejecutarSql.Parameters.Clear();
+                
+                ejecutarSql.Parameters.AddWithValue("@IdRol", idRol);
+
+                ejecutarSql.ExecuteNonQuery();
+                conexion.CerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar usuario: " + ex.Message);
+            }
+        }
+
+        // Buscar
+        public Rol BuscarRol(int idRol)
+        {
+            ejecutarSql.Connection = conexion.AbrirConexion();
+            try
+            {
+                ejecutarSql.CommandText = "SELECT roles_id, nombre_rol FROM roles WHERE roles_id = @IdRol";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@IdRol", idRol);
+                transaccion = ejecutarSql.ExecuteReader();
+
+                Rol rol = null;
+                if (transaccion.Read())
+                {
+                    rol = new Rol
+                    {
+                        IdRol = Convert.ToInt32(transaccion["roles_id"]),
+                        NombreRol = transaccion["nombre_rol"].ToString()
+                    };
+                }
+
+                transaccion.Close();
+                conexion.CerrarConexion();
+                return rol;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al buscar rol: " + ex.Message);
+            }
+        }
+    }
 }
