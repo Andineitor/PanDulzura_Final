@@ -55,46 +55,53 @@ namespace Pandulzura_AccesoDatos.DAO
             }
         }
 
-        public DataTable BuscarPedidoPorId(int pedidoId)
+        public Pedidos BuscarPedidoPorId(int idPedido)
         {
-            DataTable dt = new DataTable();
+            Pedidos pedido = null;
             try
             {
                 ejecutarSql.Connection = conexion.AbrirConexion();
-                ejecutarSql.CommandText = "Select * from PEDIDOS where PEDIDO_ID = @PedidoId";
-                ejecutarSql.Parameters.AddWithValue("@PedidoId", pedidoId);
+                ejecutarSql.CommandText = "SELECT pedido_id, usuario_id, fecha_pedido, estado_pedido FROM pedidos WHERE pedido_id = @IdPedido";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@IdPedido", idPedido);
+
                 transaccion = ejecutarSql.ExecuteReader();
-                dt.Load(transaccion);
-                return dt;
+
+                if (transaccion.Read())
+                {
+                    pedido = new Pedidos
+                    {
+                        PedidoId = Convert.ToInt32(transaccion["pedido_id"]),
+                        UsuarioId = Convert.ToInt32(transaccion["usuario_id"]),
+                        FechaPedido = Convert.ToDateTime(transaccion["fecha_pedido"]),
+                        EstadoPedido = (Pedidos.Estado)Enum.Parse(typeof(Pedidos.Estado), transaccion["estado_pedido"].ToString())
+                    };
+                }
+                transaccion.Close();
+                conexion.CerrarConexion();
             }
             catch (Exception ex)
             {
                 throw new Exception("Error al buscar pedido: " + ex.Message);
             }
-            finally
-            {
-                conexion.CerrarConexion();
-            }
+            return pedido;
         }
 
-        public DataTable Mostrar()
+        public void EliminarPedido(int idPedido)
         {
             try
             {
                 ejecutarSql.Connection = conexion.AbrirConexion();
-                ejecutarSql.CommandText = "MostrarPedidos";
-                ejecutarSql.CommandType = CommandType.StoredProcedure;
-                transaccion = ejecutarSql.ExecuteReader();
-                tabla.Load(transaccion);
-                return tabla;
+                ejecutarSql.CommandText = "DELETE FROM usuarios WHERE PEDIDO_ID = @PedidoId";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@PedidoId", idPedido);
+
+                ejecutarSql.ExecuteNonQuery();
+                conexion.CerrarConexion();
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al mostrar pedidos: " + ex.Message);
-            }
-            finally
-            {
-                conexion.CerrarConexion();
+                throw new Exception("Error al eliminar pedido: " + ex.Message);
             }
         }
     }

@@ -37,7 +37,7 @@ namespace Pandulzura_WinPresentacion
 
         public void InsertarPedido()
         {
-            nuevoPedido.PedidoId = txtPedido.TabIndex;
+            nuevoPedido.PedidoId = txtIdPedido.TabIndex;
             nuevoPedido.FechaPedido = DateTime.Value;
             nuevoPedido.UsuarioId = int.Parse(cbxUser.SelectedValue.ToString());
             nuevoPedido.EstadoPedido = (Pedidos.Estado)cbxEstado.SelectedItem;
@@ -53,17 +53,79 @@ namespace Pandulzura_WinPresentacion
                 MessageBox.Show("Error: El registro no se inserto correctamente");
             }
         }
+
+        private void BuscarPedido()
+        {
+            try
+            {
+                int idPedido = Convert.ToInt32(txtIdPedido.Text); // Asegúrate de tener un TextBox para ingresar el ID del pedido a buscar
+                Pedidos pedido = pedidosLogica.BuscarPedidoPorId(idPedido);
+
+                if (pedido != null)
+                {
+                    // Rellenar los campos del formulario con los datos del pedido
+                    cbxUser.SelectedValue = pedido.UsuarioId;
+                    DateTime.Value = pedido.FechaPedido;
+                    cbxEstado.SelectedItem = pedido.EstadoPedido;
+                }
+                else
+                {
+                    MessageBox.Show("Pedido no encontrado");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar pedido: " + ex.Message);
+            }
+        }
+
+        private void EliminarPedido()
+        {
+            try
+            {
+                int idPedido = Convert.ToInt32(txtIdPedido.Text); // Asegúrate de tener un TextBox para ingresar el ID del usuario a eliminar
+                if (pedidosLogica.EliminarPedidos(idPedido))
+                {
+                    MessageBox.Show("Usuario eliminado correctamente");
+                    //LimpiarCampos(); // Limpia los campos del formulario después de eliminar
+                    ListarUser(); // Actualiza la lista de usuarios
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar usuario");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar usuario: " + ex.Message);
+            }
+        }
         private void FormPedidos_Load(object sender, EventArgs e)
         {
             cbxEstado.DataSource = Enum.GetValues(typeof(Pedidos.Estado));
             ListarUser();
-            ListarPedidos();
+            
 
         }
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
             InsertarPedido();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            BuscarPedido();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            EliminarPedido();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ListarPedidos();
         }
     }
 }

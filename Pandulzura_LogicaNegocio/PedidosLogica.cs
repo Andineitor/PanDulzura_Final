@@ -41,7 +41,7 @@ namespace Pandulzura_LogicaNegocio
             }
         }
 
-        public DataTable BuscarPedidoPorId(int pedidoId)
+        public Pedidos BuscarPedidoPorId(int pedidoId)
         {
             try
             {
@@ -53,15 +53,16 @@ namespace Pandulzura_LogicaNegocio
             }
         }
 
-        public DataTable Mostrar()
+        public bool EliminarPedidos(int pedidoId)
         {
             try
             {
-                return pedidosDao.Mostrar();
+                pedidosDao.EliminarPedido(pedidoId);
+                return true;
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al mostrar pedidos: " + ex.Message);
+                throw new Exception("Error al buscar pedido: " + ex.Message);
             }
         }
     }
