@@ -19,19 +19,22 @@ namespace Pandulzura_AccesoDatos.DAO
         public void InsertarFact(Factura fact)
         {
             ejecutarSql.Connection = conexion.AbrirConexion();
+
             try
             {
-                //FACTURAID
-                //TOTAL_FINAL
-                //FECHA_FACT
-                ejecutarSql.CommandText = "insert into factura(FACTURAID, TOTAL_FINAL, FECHA_FACT)" + 
-                    "values('" + fact.FACTURAID + "','" + fact.TOTAL_FINAL + "','" + fact.TOTAL_FINAL + "')";
+                ejecutarSql.CommandText = "INSERT INTO factura (TOTAL_FINAL, FECHA_FACT) " +
+                                          "VALUES (@TotalFinal, @FechaFact)";
+                ejecutarSql.Parameters.AddWithValue("@TotalFinal", fact.TOTAL_FINAL);
+                ejecutarSql.Parameters.AddWithValue("@FechaFact", fact.FECHA_FACT);
                 ejecutarSql.ExecuteNonQuery();
-                conexion.CerrarConexion();
             }
             catch (Exception ex)
             {
                 throw new Exception("Error al insertar: " + ex.Message);
+            }
+            finally
+            {
+                conexion.CerrarConexion();
             }
         }
 
