@@ -8,7 +8,7 @@ namespace Pandulzura_AccesoDatos.Entidades
 {
     public class Rol
     {
-        public string IdRol {  get; set; }
+        public int IdRol {  get; set; }
         public string NombreRol { get; set; }
     }
 }
