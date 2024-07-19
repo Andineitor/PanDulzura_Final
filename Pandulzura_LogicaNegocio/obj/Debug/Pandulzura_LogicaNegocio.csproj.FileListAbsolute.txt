@@ -53,3 +53,14 @@ C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzu
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzu.1BF2266E.Up2Date
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.dll
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_LogicaNegocio.dll.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_LogicaNegocio.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_LogicaNegocio.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\bin\Debug\Pandulzura_AccesoDatos.dll.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzu.1BF2266E.Up2Date
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_LogicaNegocio\obj\Debug\Pandulzura_LogicaNegocio.pdb

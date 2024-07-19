@@ -40,5 +40,31 @@ namespace Pandulzura_LogicaNegocio
                 throw new Exception("Error: " + ex.Message);
             }
         }
+
+        public Usuario BuscarUser(int idUser)
+        {
+            try
+            {
+                return usuarioDao.BuscarUser(idUser);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
+
+        public bool EliminarUser(int idUser)
+        {
+            try
+            {
+                usuarioDao.EliminarUser(idUser);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
+
     }
 }

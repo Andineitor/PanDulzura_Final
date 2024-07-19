@@ -8,7 +8,7 @@ namespace Pandulzura_AccesoDatos.Entidades
 {
     public class Usuario
     {
-        public string IdUser {  get; set; }
+        public int IdUser { get; set; }
         public int? RolesId { get; set; }
         public string NombreUser { get; set; }
         public long? CedulaUser { get; set; }

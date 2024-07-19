@@ -33,3 +33,10 @@ C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_AccesoDatos\obj\Debug\Pandulzura
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.dll
 C:\Users\PC\Desktop\PanDulzura_Final\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_AccesoDatos\bin\Debug\Pandulzura_AccesoDatos.dll.config
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_AccesoDatos\bin\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_AccesoDatos\bin\Debug\Pandulzura_AccesoDatos.pdb
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.dll
+C:\Users\Usuario\OneDrive - Escuela Politécnica Nacional\Escritorio\Nueva carpeta\Nueva carpeta\PanDulzura_Final\Pandulzura_AccesoDatos\obj\Debug\Pandulzura_AccesoDatos.pdb

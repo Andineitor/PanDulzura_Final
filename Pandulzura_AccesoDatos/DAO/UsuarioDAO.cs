@@ -21,8 +21,17 @@ namespace Pandulzura_AccesoDatos.DAO
             ejecutarSql.Connection = conexion.AbrirConexion();
             try
             {
-                ejecutarSql.CommandText = "insert into usuarios(usuario_id, roles_id, nombre_user, cedula_user, mail_user, telefono_user, direccion_user, contrasena_user)"
-                    + "values('" + nuevoUser.IdUser + "','" + nuevoUser.RolesId + "','" + nuevoUser.NombreUser + "','" + nuevoUser.CedulaUser + "','" + nuevoUser.MailUser + "','" + nuevoUser.TelefonoUser + "','" + nuevoUser.DireccionUser + "','" + nuevoUser.ContrasenaUser + "')";
+                ejecutarSql.CommandText = "INSERT INTO usuarios(roles_id, nombre_user, cedula_user, mail_user, telefono_user, direccion_user, contrasena_user) " +
+                                          "VALUES(@RolesId, @NombreUser, @CedulaUser, @MailUser, @TelefonoUser, @DireccionUser, @ContrasenaUser)";
+                ejecutarSql.Parameters.Clear(); // Limpia los parámetros anteriores
+                ejecutarSql.Parameters.AddWithValue("@RolesId", nuevoUser.RolesId);
+                ejecutarSql.Parameters.AddWithValue("@NombreUser", nuevoUser.NombreUser);
+                ejecutarSql.Parameters.AddWithValue("@CedulaUser", nuevoUser.CedulaUser);
+                ejecutarSql.Parameters.AddWithValue("@MailUser", nuevoUser.MailUser);
+                ejecutarSql.Parameters.AddWithValue("@TelefonoUser", nuevoUser.TelefonoUser);
+                ejecutarSql.Parameters.AddWithValue("@DireccionUser", nuevoUser.DireccionUser);
+                ejecutarSql.Parameters.AddWithValue("@ContrasenaUser", nuevoUser.ContrasenaUser);
+
                 ejecutarSql.ExecuteNonQuery();
                 conexion.CerrarConexion();
             }
@@ -43,6 +52,7 @@ namespace Pandulzura_AccesoDatos.DAO
 
                 //sacar la inf
                 ejecutarSql.CommandText = "Select usuario_id, roles_id, nombre_user, cedula_user, mail_user, telefono_user, direccion_user, contrasena_user from usuarios";
+                ejecutarSql.Parameters.Clear(); // Limpia los parámetros anteriores
                 transaccion = ejecutarSql.ExecuteReader();
 
                 // almacenar resultado de la query
@@ -57,5 +67,64 @@ namespace Pandulzura_AccesoDatos.DAO
                 throw new Exception("Error al listar usuarios: " + ex.Message);
             }
         }
+
+        //buscar
+        public Usuario BuscarUser(int idUser)
+        {
+            Usuario usuario = null;
+            try
+            {
+                ejecutarSql.Connection = conexion.AbrirConexion();
+                ejecutarSql.CommandText = "SELECT usuario_id, roles_id, nombre_user, cedula_user, mail_user, telefono_user, direccion_user, contrasena_user FROM usuarios WHERE usuario_id = @IdUser";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@IdUser", idUser);
+
+                transaccion = ejecutarSql.ExecuteReader();
+
+                if (transaccion.Read())
+                {
+                    usuario = new Usuario
+                    {
+                        IdUser = Convert.ToInt32(transaccion["usuario_id"]),
+                        RolesId = Convert.ToInt32(transaccion["roles_id"]),
+                        NombreUser = transaccion["nombre_user"].ToString(),
+                        CedulaUser = Convert.ToInt64(transaccion["cedula_user"]),
+                        MailUser = transaccion["mail_user"].ToString(),
+                        TelefonoUser = Convert.ToInt64(transaccion["telefono_user"]),
+                        DireccionUser = transaccion["direccion_user"].ToString(),
+                        ContrasenaUser = transaccion["contrasena_user"].ToString()
+                    };
+                }
+                transaccion.Close();
+                conexion.CerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al buscar usuario: " + ex.Message);
+            }
+            return usuario;
+        }
+
+
+        //elimanar
+        public void EliminarUser(int idUser)
+        {
+            try
+            {
+                ejecutarSql.Connection = conexion.AbrirConexion();
+                ejecutarSql.CommandText = "DELETE FROM usuarios WHERE usuario_id = @IdUser";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@IdUser", idUser);
+
+                ejecutarSql.ExecuteNonQuery();
+                conexion.CerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar usuario: " + ex.Message);
+            }
+        }
+
+
     }
 }
