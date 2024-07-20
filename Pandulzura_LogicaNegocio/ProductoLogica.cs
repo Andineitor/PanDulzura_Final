@@ -1,41 +1,72 @@
 ﻿using Pandulzura_AccesoDatos.DAO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Pandulzura_AccesoDatos.Entidades;
 using System.Data;
+using System;
 
-namespace Pandulzura_LogicaNegocio
+public class ProductoLogica
 {
-    public class ProductoLogica
+    private ProductoDAO productoDAO = new ProductoDAO();
+
+    public bool InsertarProducto(Producto nuevoProducto)
     {
-        private ProductoDAO productoDAO = new ProductoDAO ();
-
-        public bool InsertarProducto(Producto nuevoProducto)
+        try
         {
-            try
-            {
-                productoDAO.InsertarProducto(nuevoProducto);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error: " + ex.Message);
-            }
+            productoDAO.InsertarProducto(nuevoProducto);
+            return true;
         }
-
-        public DataTable ListarProducto() 
+        catch (Exception ex)
         {
-            try 
-            {
-                return productoDAO.ListarProducto();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error: " + ex.Message);
-            }
+            throw new Exception("Error: " + ex.Message);
+        }
+    }
+
+    public DataTable ListarProducto()
+    {
+        try
+        {
+            return productoDAO.ListarProducto();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Error: " + ex.Message);
+        }
+    }
+
+    public Producto BuscarProducto(int idProd)
+    {
+        try
+        {
+            return productoDAO.BuscarProducto(idProd);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Error: " + ex.Message);
+        }
+    }
+
+    public bool ActualizarProducto(Producto producto)
+    {
+        try
+        {
+            productoDAO.ActualizarProducto(producto);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Error: " + ex.Message);
+        }
+    }
+
+    public bool EliminarProducto(int idProd)
+    {
+        try
+        {
+            productoDAO.EliminarProducto(idProd);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Error: " + ex.Message);
         }
     }
 }

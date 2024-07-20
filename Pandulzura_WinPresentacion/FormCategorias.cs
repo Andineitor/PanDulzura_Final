@@ -32,7 +32,7 @@ namespace Pandulzura_WinPresentacion
         //Insertar
         public void InsertarCategoria()
         {
-            nuevaCate.IdCategoria = idCategoria.Text;
+            nuevaCate.IdCategoria = idCategoria.TabIndex;
             nuevaCate.NombreCategoria = categoria.Text;
             if (cateLogica.InsertarCategoria(nuevaCate))
             {

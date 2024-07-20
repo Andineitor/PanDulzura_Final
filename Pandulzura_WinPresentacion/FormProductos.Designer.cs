@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.categoriaid = new System.Windows.Forms.TextBox();
             this.productoid = new System.Windows.Forms.TextBox();
             this.precio = new System.Windows.Forms.NumericUpDown();
             this.txtcate = new System.Windows.Forms.Label();
@@ -46,6 +45,10 @@
             this.agregar = new System.Windows.Forms.Button();
             this.producto = new System.Windows.Forms.TextBox();
             this.dgvProd = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnActulizar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.cbxCategoria = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.precio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disponibilidad)).BeginInit();
@@ -54,7 +57,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.categoriaid);
+            this.groupBox1.Controls.Add(this.cbxCategoria);
             this.groupBox1.Controls.Add(this.productoid);
             this.groupBox1.Controls.Add(this.precio);
             this.groupBox1.Controls.Add(this.txtcate);
@@ -78,14 +81,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // categoriaid
-            // 
-            this.categoriaid.Location = new System.Drawing.Point(460, 102);
-            this.categoriaid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.categoriaid.Name = "categoriaid";
-            this.categoriaid.Size = new System.Drawing.Size(82, 26);
-            this.categoriaid.TabIndex = 18;
             // 
             // productoid
             // 
@@ -263,18 +258,71 @@
             // dgvProd
             // 
             this.dgvProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProd.Location = new System.Drawing.Point(38, 423);
+            this.dgvProd.Location = new System.Drawing.Point(27, 485);
             this.dgvProd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvProd.Name = "dgvProd";
             this.dgvProd.RowHeadersWidth = 62;
             this.dgvProd.Size = new System.Drawing.Size(816, 265);
             this.dgvProd.TabIndex = 1;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Lime;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnBuscar.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(80, 404);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(154, 45);
+            this.btnBuscar.TabIndex = 19;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnActulizar
+            // 
+            this.btnActulizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnActulizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnActulizar.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActulizar.Location = new System.Drawing.Point(348, 404);
+            this.btnActulizar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnActulizar.Name = "btnActulizar";
+            this.btnActulizar.Size = new System.Drawing.Size(154, 45);
+            this.btnActulizar.TabIndex = 20;
+            this.btnActulizar.Text = "Actualizar";
+            this.btnActulizar.UseVisualStyleBackColor = false;
+            this.btnActulizar.Click += new System.EventHandler(this.btnActulizar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEliminar.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(628, 404);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(154, 45);
+            this.btnEliminar.TabIndex = 21;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // cbxCategoria
+            // 
+            this.cbxCategoria.FormattingEnabled = true;
+            this.cbxCategoria.Location = new System.Drawing.Point(460, 99);
+            this.cbxCategoria.Name = "cbxCategoria";
+            this.cbxCategoria.Size = new System.Drawing.Size(103, 28);
+            this.cbxCategoria.TabIndex = 26;
+            // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 728);
+            this.ClientSize = new System.Drawing.Size(867, 764);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnActulizar);
             this.Controls.Add(this.dgvProd);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -310,6 +358,9 @@
         private System.Windows.Forms.NumericUpDown precio;
         private System.Windows.Forms.DataGridView dgvProd;
         private System.Windows.Forms.TextBox productoid;
-        private System.Windows.Forms.TextBox categoriaid;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnActulizar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.ComboBox cbxCategoria;
     }
 }
