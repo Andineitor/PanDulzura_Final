@@ -40,6 +40,7 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRol)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +86,7 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnAgregar.Location = new System.Drawing.Point(182, 105);
+            this.btnAgregar.Location = new System.Drawing.Point(212, 105);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(101, 38);
             this.btnAgregar.TabIndex = 4;
@@ -96,7 +97,7 @@
             // btnListar
             // 
             this.btnListar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnListar.Location = new System.Drawing.Point(373, 105);
+            this.btnListar.Location = new System.Drawing.Point(509, 114);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(101, 40);
             this.btnListar.TabIndex = 5;
@@ -128,6 +129,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnActualizar);
             this.groupBox1.Controls.Add(this.btnLimpiar);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.btnAgregar);
@@ -161,6 +163,17 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnActualizar.Location = new System.Drawing.Point(327, 105);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(101, 38);
+            this.btnActualizar.TabIndex = 8;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // FormRol
             // 
@@ -199,5 +212,6 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }

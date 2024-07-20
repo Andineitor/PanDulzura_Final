@@ -101,6 +101,32 @@ namespace Pandulzura_WinPresentacion
             }
         }
 
+        // Actualizar
+        public void actualizarRol()
+        {
+            if (int.TryParse(txtRol.Text, out int idRol))
+            {
+                Rol rol = new Rol
+                {
+                    IdRol = idRol,
+                    NombreRol = txtNombre.Text
+                };
+
+                if (rolLogica.ActualizarRol(rol))
+                {
+                    MessageBox.Show("El rol se actualizó correctamente.");
+                    listarRol();
+                }
+                else
+                {
+                    MessageBox.Show("Error al actualizar el rol.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor ingrese un ID de rol válido.");
+            }
+        }
 
 
         private void FormRol_Load(object sender, EventArgs e)
@@ -163,6 +189,11 @@ namespace Pandulzura_WinPresentacion
         {
             EliminarRol();
             listarRol();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            actualizarRol();
         }
     }
 }

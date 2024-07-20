@@ -43,6 +43,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvgListarPedidos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -112,7 +113,7 @@
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.Location = new System.Drawing.Point(459, 38);
+            this.BtnAceptar.Location = new System.Drawing.Point(459, 25);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(106, 33);
             this.BtnAceptar.TabIndex = 30;
@@ -156,7 +157,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(459, 93);
+            this.button1.Location = new System.Drawing.Point(459, 120);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 33);
             this.button1.TabIndex = 38;
@@ -166,6 +167,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.cbxUser);
             this.groupBox1.Controls.Add(this.label4);
@@ -191,6 +193,15 @@
             this.groupBox2.Size = new System.Drawing.Size(713, 116);
             this.groupBox2.TabIndex = 40;
             this.groupBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(459, 73);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 33);
+            this.button2.TabIndex = 39;
+            this.button2.Text = "Actualizar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // FormPedidos
             // 
@@ -230,5 +241,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button2;
     }
 }
