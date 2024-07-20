@@ -2,15 +2,5 @@
 .bin/
 .git/
 
-# Ignorar archivos binarios y de depuración en Pandulzura_LogicaNegocio
-../Pandulzura_LogicaNegocio/bin/Debug/*.dll
-../Pandulzura_LogicaNegocio/bin/Debug/*.pdb
-../Pandulzura_LogicaNegocio/obj/Debug/*.cache
-../Pandulzura_LogicaNegocio/obj/Debug/*.txt
-
-# Ignorar archivos binarios y de depuración en Pandulzura_WinPresentacion
-../Pandulzura_WinPresentacion/bin/Debug/*.dll
-../Pandulzura_WinPresentacion/bin/Debug/*.exe
-../Pandulzura_WinPresentacion/obj/Debug/*.cache
-../Pandulzura_WinPresentacion/obj/Debug/*.txt
-../Pandulzura_WinPresentacion/obj/Debug/*.pdb
+/Pandulzura_AccesoDatos/bin/Debug/
+/Pandulzura_WinPresentacion/bin/Debug/
