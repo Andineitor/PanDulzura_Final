@@ -37,5 +37,20 @@ namespace Pandulzura_LogicaNegocio
                 throw new Exception(ex.Message);
             }
         }
+
+        public bool EliminarDetalle(string id)
+        {
+            try
+            {
+                detalleDAO.EliminarDetalle(id);
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
     }
 }

@@ -56,5 +56,56 @@ namespace Pandulzura_AccesoDatos.DAO
                 throw new Exception("Error al listar categorias: " + ex.Message);
             }
         }
+
+        //Buascar
+        public Categoria BuscarCategoriaPorId(int idCategoria)
+        {
+            Categoria categoria = null;
+            try
+            {
+                ejecutarSql.Connection = conexion.AbrirConexion();
+                ejecutarSql.CommandText = "SELECT categoria_id, nombre_categoria FROM categoria WHERE categoria_id = @IdCategoria";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@IdCategoria", idCategoria);
+
+                transaccion = ejecutarSql.ExecuteReader();
+
+                if (transaccion.Read())
+                {
+                    categoria = new Categoria
+                    {
+                        CategoriaId = Convert.ToInt32(transaccion["categoria_id"]),
+                        NombreCategoria = transaccion["nombre_categoria"].ToString()
+                    };
+                }
+                transaccion.Close();
+                conexion.CerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al buscar categoría: " + ex.Message);
+            }
+            return categoria;
+        }
+
+        //Eliminar
+        public void EliminarCategoria(int idCategoria)
+        {
+            try
+            {
+                ejecutarSql.Connection = conexion.AbrirConexion();
+                ejecutarSql.CommandText = "DELETE FROM categorias WHERE categoria_id = @CategoriaId";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@CategoriaId", idCategoria);
+
+                ejecutarSql.ExecuteNonQuery();
+                conexion.CerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar categoría: " + ex.Message);
+            }
+        }
+
     }
 }

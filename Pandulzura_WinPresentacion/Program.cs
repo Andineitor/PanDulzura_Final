@@ -16,7 +16,11 @@ namespace Pandulzura_WinPresentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new FormProductos());
+=======
+            Application.Run(new FormPrincipal());
+>>>>>>> 05a889e4515e1b181e7ba0ce79602abf5e14c47f
         }
     }
 }

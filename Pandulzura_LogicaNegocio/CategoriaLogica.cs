@@ -37,5 +37,31 @@ namespace Pandulzura_LogicaNegocio
                 throw new Exception("Error: " + ex.Message);
             }
         }
+
+        public Categoria BuscarCategoriaPorId(int categoriaId)
+        {
+            try
+            {
+                return categoriaDao.BuscarCategoriaPorId(categoriaId);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al buscar categoría: " + ex.Message);
+            }
+        }
+
+        public bool EliminarCategoria(int categoriaId)
+        {
+            try
+            {
+                categoriaDao.EliminarCategoria(categoriaId);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar categoría: " + ex.Message);
+            }
+        }
+
     }
 }
