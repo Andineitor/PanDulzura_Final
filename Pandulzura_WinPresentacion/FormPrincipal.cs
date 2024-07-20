@@ -132,5 +132,17 @@ namespace Pandulzura_WinPresentacion
         {
             DetalleP();
         }
+
+        private void Fatura()
+        {
+            FormFactura frmFactura = new FormFactura();
+            frmFactura.MdiParent = this;
+            frmFactura.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Fatura();
+        }
     }
 }

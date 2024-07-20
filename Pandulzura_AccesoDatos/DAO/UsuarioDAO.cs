@@ -125,6 +125,30 @@ namespace Pandulzura_AccesoDatos.DAO
             }
         }
 
-
+        // Actualizar
+        public void ActualizarUser(Usuario idUser)
+        {
+            try
+            {
+                ejecutarSql.Connection = conexion.AbrirConexion();
+                ejecutarSql.CommandText = "UPDATE usuarios SET nombre_user = @NombreUser, cedula_user = @CedulaUser, mail_user = @MailUser, telefono_user = @TelefonoUser, direccion_user = @DireccionUser, contrasena_user = @ContrasenaUser WHERE usuario_id = @IdUser";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@IdUser", idUser.IdUser);
+                ejecutarSql.Parameters.AddWithValue("@RolesId", idUser.RolesId);
+                ejecutarSql.Parameters.AddWithValue("@NombreUser", idUser.NombreUser);
+                ejecutarSql.Parameters.AddWithValue("@CedulaUser", idUser.CedulaUser);
+                ejecutarSql.Parameters.AddWithValue("@MailUser", idUser.MailUser);
+                ejecutarSql.Parameters.AddWithValue("@TelefonoUser", idUser.TelefonoUser);
+                ejecutarSql.Parameters.AddWithValue("@DireccionUser", idUser.DireccionUser);
+                ejecutarSql.Parameters.AddWithValue("@ContrasenaUser", idUser.ContrasenaUser);
+                ejecutarSql.ExecuteNonQuery();
+                conexion.CerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar usuario: " + ex.Message);
+            }
+        }
     }
+
 }

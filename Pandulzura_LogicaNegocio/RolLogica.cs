@@ -70,6 +70,19 @@ namespace Pandulzura_LogicaNegocio
                 throw new Exception("Error: " + ex.Message);
             }
         }
+
+        //Update
+        public bool ActualizarRol(Rol rol)
+        {
+            try
+            {
+                return rolDao.ActualizarRol(rol);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
     }
 }
 
