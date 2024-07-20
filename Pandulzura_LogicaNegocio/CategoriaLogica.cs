@@ -42,7 +42,7 @@ namespace Pandulzura_LogicaNegocio
         {
             try
             {
-                return categoriaDao.BuscarCategoriaPorId(categoriaId);
+                return categoriaDAO.BuscarCategoriaPorId(categoriaId);
             }
             catch (Exception ex)
             {
@@ -54,7 +54,7 @@ namespace Pandulzura_LogicaNegocio
         {
             try
             {
-                categoriaDao.EliminarCategoria(categoriaId);
+                categoriaDAO.EliminarCategoria(categoriaId);
                 return true;
             }
             catch (Exception ex)

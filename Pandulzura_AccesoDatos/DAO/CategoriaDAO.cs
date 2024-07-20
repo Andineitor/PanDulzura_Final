@@ -74,7 +74,7 @@ namespace Pandulzura_AccesoDatos.DAO
                 {
                     categoria = new Categoria
                     {
-                        CategoriaId = Convert.ToInt32(transaccion["categoria_id"]),
+                        IdCategoria = Convert.ToInt32(transaccion["categoria_id"]),
                         NombreCategoria = transaccion["nombre_categoria"].ToString()
                     };
                 }

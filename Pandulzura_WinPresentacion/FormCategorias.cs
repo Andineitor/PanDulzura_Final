@@ -150,3 +150,5 @@ namespace Pandulzura_WinPresentacion
         {
             EliminarCategoria();
         }
+    }
+}
