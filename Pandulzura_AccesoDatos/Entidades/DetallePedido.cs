@@ -8,10 +8,11 @@ namespace Pandulzura_AccesoDatos.Entidades
 {
     public class DetallePedido
     {
-        public string IdDetalle { get; set; }
-        public int? IdPedido { get; set; }
-        public int? IdFactura { get; set; }
-        public int? IdProducto { get; set; }
-        public int CantidadPedido { get; set; }
+        public string DetalleId { get; set; }
+        public int PedidoId { get; set; }
+        public int FacturaId { get; set; }
+        public string ProductoId { get; set; }
+        public string CantidadPedido { get; set; }
+
     }
 }

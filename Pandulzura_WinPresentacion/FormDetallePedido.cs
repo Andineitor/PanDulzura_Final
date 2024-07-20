@@ -17,6 +17,14 @@ namespace Pandulzura_WinPresentacion
         private DetallePedidoLogica detalleLogica;
         private DetallePedido nuevoDetalle;
 
+        public FormDetallePedido()
+        {
+            InitializeComponent();
+            detalleLogica = new DetallePedidoLogica();
+            nuevoDetalle = new DetallePedido();
+            ListarDetalle();
+        }
+
         //Listar
         public void ListarDetalle()
         {
@@ -26,8 +34,8 @@ namespace Pandulzura_WinPresentacion
         //Insertar
         public void InsertarDetalle()
         {
-            nuevoDetalle.IdDetalle = DetalleId.Text;
-            nuevoDetalle.CantidadPedido = Cantidad.TabIndex;
+            nuevoDetalle.ProductoId = productid.Text;
+            nuevoDetalle.CantidadPedido = Cantidad.Text;
 
             if (detalleLogica.InsertarDetalle(nuevoDetalle))
             {
@@ -42,15 +50,10 @@ namespace Pandulzura_WinPresentacion
         }
         private void LimpiarCampos()
         {
-            DetalleId.Clear();
+            productid.Clear();
             Cantidad.Clear();
         }
-        public FormDetallePedido()
-        {
-            InitializeComponent();
-            detalleLogica = new DetallePedidoLogica();
-            nuevoDetalle = new DetallePedido();
-        }
+        
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -128,6 +131,48 @@ namespace Pandulzura_WinPresentacion
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormDetallePedido_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string detalleid =  txtdetalleid.Text;
+
+                if (detalleLogica.EliminarDetalle(detalleid))
+                {
+                    MessageBox.Show("Factura eliminada exitosamente.");
+                    ListarDetalle();
+                }
+                else
+                {
+                    MessageBox.Show("Factura no encontrada.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void detalleid_TextChanged_1(object sender, EventArgs e)
         {
 
         }

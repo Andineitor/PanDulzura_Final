@@ -18,18 +18,33 @@ namespace Pandulzura_AccesoDatos.DAO
         //crud
         public void InsertarDetalle(DetallePedido nuevoDetalle)
         {
+            // Asegúrate de que conexion es una instancia válida de tu clase de conexión.
             ejecutarSql.Connection = conexion.AbrirConexion();
             try
             {
-                ejecutarSql.CommandText = "insert into detalle_pedidos(detalle_pedido_id, cantidad_pedido)" + "values('" + nuevoDetalle.IdDetalle + "','" + nuevoDetalle.CantidadPedido + "')";
+                ejecutarSql.CommandText = "INSERT INTO [dbo].[DETALLE_PEDIDOS] " +
+                                          "([PEDIDO_ID], [FACTURA_ID], [PRODUCTO_ID], [CANTIDAD_PEDIDO]) " +
+                                          "VALUES (1, 1, @ProductoId, @CantidadPedido)";
+
+                // Asignar parámetros
+                ejecutarSql.Parameters.Clear(); // Limpia parámetros anteriores si los hubiera
+                ejecutarSql.Parameters.AddWithValue("@ProductoId", nuevoDetalle.ProductoId);
+                ejecutarSql.Parameters.AddWithValue("@CantidadPedido", nuevoDetalle.CantidadPedido);
+
                 ejecutarSql.ExecuteNonQuery();
-                conexion.CerrarConexion();
             }
             catch (Exception ex)
             {
                 throw new Exception("Error al insertar detalles de pedido: " + ex.Message);
             }
+            finally
+            {
+                conexion.CerrarConexion(); // Asegúrate de cerrar la conexión
+            }
         }
+
+
+
 
         //lista
         public DataTable ListarDetalle()
@@ -41,7 +56,7 @@ namespace Pandulzura_AccesoDatos.DAO
                 ejecutarSql.Connection = conexion.AbrirConexion();
 
                 //sacar la inf
-                ejecutarSql.CommandText = "Select detalle_pedido_id, cantidad_pedido from detalle_pedidos";
+                ejecutarSql.CommandText = "Select * from detalle_pedidos";
                 transaccion = ejecutarSql.ExecuteReader();
 
                 // almacenar resultado de la query
@@ -54,6 +69,29 @@ namespace Pandulzura_AccesoDatos.DAO
             catch (Exception ex)
             {
                 throw new Exception("Error al listar detalles de pedido: " + ex.Message);
+            }
+        }
+
+        public bool EliminarDetalle(string id)
+        {
+            SqlCommand ejecutarSql = new SqlCommand();
+            ejecutarSql.Connection = conexion.AbrirConexion();
+
+            try
+            {
+                ejecutarSql.CommandText = "DELETE FROM DETALLE_PEDIDOS WHERE DETALLE_PEDIDO_ID = @Id;";
+                ejecutarSql.Parameters.AddWithValue("@Id", int.Parse(id)); // Convertir a int si es necesario
+
+                int filasAfectadas = ejecutarSql.ExecuteNonQuery();
+                return filasAfectadas > 0; // Retorna true si se eliminó al menos una fila
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar: " + ex.Message);
+            }
+            finally
+            {
+                conexion.CerrarConexion();
             }
         }
     }
