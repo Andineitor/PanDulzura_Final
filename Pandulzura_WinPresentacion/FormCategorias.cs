@@ -52,6 +52,52 @@ namespace Pandulzura_WinPresentacion
             categoria.Clear();
         }
 
+        private void BuscarCategoria()
+        {
+            try
+            {
+                int idCategoria = Convert.ToInt32(txtIdCategoria.Text); // Asegúrate de tener un TextBox para ingresar el ID de la categoría a buscar
+                Categoria categoria = categoriaLogica.BuscarCategoriaPorId(idCategoria);
+
+                if (categoria != null)
+                {
+                    // Rellenar los campos del formulario con los datos de la categoría
+                    txtNombreCategoria.Text = categoria.NombreCategoria;
+                }
+                else
+                {
+                    MessageBox.Show("Categoría no encontrada");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar categoría: " + ex.Message);
+            }
+        }
+
+        private void EliminarCategoria()
+        {
+            try
+            {
+                int idCategoria = Convert.ToInt32(txtIdCategoria.Text); // Asegúrate de tener un TextBox para ingresar el ID de la categoría a eliminar
+                if (categoriaLogica.EliminarCategoria(idCategoria))
+                {
+                    MessageBox.Show("Categoría eliminada correctamente");
+                    //LimpiarCampos(); // Limpia los campos del formulario después de eliminar
+                    ListarCategorias(); // Actualiza la lista de categorías
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar categoría");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar categoría: " + ex.Message);
+            }
+        }
+
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -96,5 +142,13 @@ namespace Pandulzura_WinPresentacion
         {
 
         }
-    }
-}
+
+        private void Buscar_Click(object sender, EventArgs e)
+        {
+            BuscarCategoria();
+        }
+
+        private void Eliminarbt_Click(object sender, EventArgs e)
+        {
+            EliminarCategoria();
+        }
