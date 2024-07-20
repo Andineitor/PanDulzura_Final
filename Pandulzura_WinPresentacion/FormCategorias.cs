@@ -56,13 +56,12 @@ namespace Pandulzura_WinPresentacion
         {
             try
             {
-                int idCategoria = Convert.ToInt32(txtIdCategoria.Text); // Asegúrate de tener un TextBox para ingresar el ID de la categoría a buscar
-                Categoria categoria = categoriaLogica.BuscarCategoriaPorId(idCategoria);
+                int CategoriaID = Convert.ToInt32(idCategoria.Text);
+                Categoria namecategoria = cateLogica.BuscarCategoriaPorId(CategoriaID);
 
-                if (categoria != null)
+                if (namecategoria != null)
                 {
-                    // Rellenar los campos del formulario con los datos de la categoría
-                    txtNombreCategoria.Text = categoria.NombreCategoria;
+                    categoria.Text = namecategoria.NombreCategoria;
                 }
                 else
                 {
@@ -79,12 +78,11 @@ namespace Pandulzura_WinPresentacion
         {
             try
             {
-                int idCategoria = Convert.ToInt32(txtIdCategoria.Text); // Asegúrate de tener un TextBox para ingresar el ID de la categoría a eliminar
-                if (categoriaLogica.EliminarCategoria(idCategoria))
+                int CategoriaID = Convert.ToInt32(idCategoria.Text);
+                if (cateLogica.EliminarCategoria(CategoriaID))
                 {
                     MessageBox.Show("Categoría eliminada correctamente");
-                    //LimpiarCampos(); // Limpia los campos del formulario después de eliminar
-                    ListarCategorias(); // Actualiza la lista de categorías
+                    ListarCategoria();
                 }
                 else
                 {
