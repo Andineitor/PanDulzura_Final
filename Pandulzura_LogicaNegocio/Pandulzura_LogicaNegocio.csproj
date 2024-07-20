@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CategoriaLogica.cs" />
     <Compile Include="DetallePedidoLogica.cs" />
+    <Compile Include="FacturaLogica.cs" />
     <Compile Include="pandulzura.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

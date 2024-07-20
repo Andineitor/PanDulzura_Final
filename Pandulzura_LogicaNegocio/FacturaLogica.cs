@@ -14,7 +14,6 @@ namespace Pandulzura_LogicaNegocio
         private FacturaDao facDao = new FacturaDao();
 
 
-
         public bool InsertarFac(Factura nuevafact)
         {
             try
@@ -42,5 +41,55 @@ namespace Pandulzura_LogicaNegocio
                 throw new Exception("Error: " + ex.Message);
             }
         }
+
+        public bool ActualizarFactura(Factura fact)
+        {
+            try
+            {
+                facDao.ActualizarFactura(fact);
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception("Error: " + ex.Message);
+            }
+
+        }
+
+        public Factura ObtenerFacturaPorId(string id)
+        {
+            try
+            {
+                return facDao.ObtenerFacturaPorId(id);
+
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
+
+        public bool EliminarFactura(string id)
+        {
+            try
+            {
+                facDao.EliminarFactura(id);
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
+
+
+
+
+
     }
 }
