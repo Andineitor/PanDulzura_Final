@@ -10,7 +10,7 @@ namespace Pandulzura_AccesoDatos
 {
     internal class ConexionBD
     {
-        private SqlConnection connection = new SqlConnection("server=ANDINEITOR;database=PanDulzuraV2;Integrated Security=True");
+        private SqlConnection connection = new SqlConnection("server=DESKTOP-JNQHEMI\\JOSS;database=PanDulzuraV2;Integrated Security=True");
     
         public SqlConnection AbrirConexion()
         {

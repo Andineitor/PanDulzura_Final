@@ -104,5 +104,31 @@ namespace Pandulzura_AccesoDatos.DAO
                 throw new Exception("Error al eliminar pedido: " + ex.Message);
             }
         }
+
+        public bool ActualizarPedido(Pedidos pedido)
+        {
+            try
+            {
+                using (SqlConnection connection = conexion.AbrirConexion())
+                {
+                    string query = "UPDATE Pedidos SET UsuarioId = @UsuarioId, FechaPedido = @FechaPedido, EstadoPedido = @EstadoPedido WHERE PedidoId = @PedidoId";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UsuarioId", pedido.UsuarioId);
+                        command.Parameters.AddWithValue("@FechaPedido", pedido.FechaPedido);
+                        command.Parameters.AddWithValue("@EstadoPedido", pedido.EstadoPedido.ToString());
+                        command.Parameters.AddWithValue("@PedidoId", pedido.PedidoId);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar pedido: " + ex.Message);
+            }
+        }
+
     }
 }

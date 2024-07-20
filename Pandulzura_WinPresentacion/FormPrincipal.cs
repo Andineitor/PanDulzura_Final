@@ -144,5 +144,10 @@ namespace Pandulzura_WinPresentacion
         {
             Fatura();
         }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fatura();
+        }
     }
 }

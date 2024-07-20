@@ -38,14 +38,17 @@
             this.DateTime = new System.Windows.Forms.DateTimePicker();
             this.textFacturaId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // EditarBtn
             // 
-            this.EditarBtn.Location = new System.Drawing.Point(472, 46);
+            this.EditarBtn.Location = new System.Drawing.Point(391, 27);
+            this.EditarBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EditarBtn.Name = "EditarBtn";
-            this.EditarBtn.Size = new System.Drawing.Size(75, 23);
+            this.EditarBtn.Size = new System.Drawing.Size(84, 29);
             this.EditarBtn.TabIndex = 1;
             this.EditarBtn.Text = "Editar";
             this.EditarBtn.UseVisualStyleBackColor = true;
@@ -53,9 +56,10 @@
             // 
             // EliminarBtn
             // 
-            this.EliminarBtn.Location = new System.Drawing.Point(574, 45);
+            this.EliminarBtn.Location = new System.Drawing.Point(494, 27);
+            this.EliminarBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EliminarBtn.Name = "EliminarBtn";
-            this.EliminarBtn.Size = new System.Drawing.Size(75, 23);
+            this.EliminarBtn.Size = new System.Drawing.Size(84, 29);
             this.EliminarBtn.TabIndex = 2;
             this.EliminarBtn.Text = "Eliminar";
             this.EliminarBtn.UseVisualStyleBackColor = true;
@@ -63,9 +67,10 @@
             // 
             // AgregarBtn
             // 
-            this.AgregarBtn.Location = new System.Drawing.Point(509, 124);
+            this.AgregarBtn.Location = new System.Drawing.Point(433, 124);
+            this.AgregarBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AgregarBtn.Name = "AgregarBtn";
-            this.AgregarBtn.Size = new System.Drawing.Size(75, 23);
+            this.AgregarBtn.Size = new System.Drawing.Size(84, 29);
             this.AgregarBtn.TabIndex = 3;
             this.AgregarBtn.Text = "Agregar";
             this.AgregarBtn.UseVisualStyleBackColor = true;
@@ -74,85 +79,100 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(80, 253);
+            this.dataGridView1.Location = new System.Drawing.Point(151, 302);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(590, 183);
+            this.dataGridView1.Size = new System.Drawing.Size(607, 229);
             this.dataGridView1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(179, 127);
+            this.label2.Location = new System.Drawing.Point(40, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 16);
+            this.label2.Size = new System.Drawing.Size(46, 20);
             this.label2.TabIndex = 8;
             this.label2.Text = "Valor";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(182, 169);
+            this.label3.Location = new System.Drawing.Point(44, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 16);
+            this.label3.Size = new System.Drawing.Size(54, 20);
             this.label3.TabIndex = 9;
             this.label3.Text = "Fecha";
             // 
             // textValorF
             // 
-            this.textValorF.Location = new System.Drawing.Point(297, 121);
+            this.textValorF.Location = new System.Drawing.Point(173, 120);
+            this.textValorF.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textValorF.Name = "textValorF";
-            this.textValorF.Size = new System.Drawing.Size(178, 22);
+            this.textValorF.Size = new System.Drawing.Size(200, 26);
             this.textValorF.TabIndex = 5;
             // 
             // DateTime
             // 
             this.DateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTime.Location = new System.Drawing.Point(297, 167);
+            this.DateTime.Location = new System.Drawing.Point(173, 178);
             this.DateTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DateTime.Name = "DateTime";
-            this.DateTime.Size = new System.Drawing.Size(178, 22);
+            this.DateTime.Size = new System.Drawing.Size(200, 26);
             this.DateTime.TabIndex = 35;
             this.DateTime.ValueChanged += new System.EventHandler(this.DateTime_ValueChanged);
             // 
             // textFacturaId
             // 
-            this.textFacturaId.Location = new System.Drawing.Point(297, 46);
+            this.textFacturaId.Location = new System.Drawing.Point(173, 27);
+            this.textFacturaId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textFacturaId.Name = "textFacturaId";
-            this.textFacturaId.Size = new System.Drawing.Size(141, 22);
+            this.textFacturaId.Size = new System.Drawing.Size(158, 26);
             this.textFacturaId.TabIndex = 36;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(182, 52);
+            this.label1.Location = new System.Drawing.Point(44, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 16);
+            this.label1.Size = new System.Drawing.Size(99, 20);
             this.label1.TabIndex = 37;
             this.label1.Text = "Id de factura";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.textFacturaId);
+            this.groupBox1.Controls.Add(this.DateTime);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textValorF);
+            this.groupBox1.Controls.Add(this.AgregarBtn);
+            this.groupBox1.Controls.Add(this.EliminarBtn);
+            this.groupBox1.Controls.Add(this.EditarBtn);
+            this.groupBox1.Location = new System.Drawing.Point(151, 43);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(606, 223);
+            this.groupBox1.TabIndex = 38;
+            this.groupBox1.TabStop = false;
+            // 
             // FormFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textFacturaId);
-            this.Controls.Add(this.DateTime);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textValorF);
-            this.Controls.Add(this.AgregarBtn);
-            this.Controls.Add(this.EliminarBtn);
-            this.Controls.Add(this.EditarBtn);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormFactura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormFactura";
             this.Load += new System.EventHandler(this.FormFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -167,5 +187,6 @@
         private System.Windows.Forms.DateTimePicker DateTime;
         private System.Windows.Forms.TextBox textFacturaId;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

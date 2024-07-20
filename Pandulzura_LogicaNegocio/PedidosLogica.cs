@@ -65,5 +65,18 @@ namespace Pandulzura_LogicaNegocio
                 throw new Exception("Error al buscar pedido: " + ex.Message);
             }
         }
+
+        public bool ActualizarPedido(Pedidos pedido)
+        {
+            try
+            {
+                return pedidosDao.ActualizarPedido(pedido);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar pedido: " + ex.Message);
+            }
+        }
+
     }
 }
