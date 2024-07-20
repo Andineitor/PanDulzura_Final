@@ -99,5 +99,24 @@ namespace Pandulzura_AccesoDatos.DAO
                 throw new Exception("Error al buscar rol: " + ex.Message);
             }
         }
+        // Actualizar
+        public bool ActualizarRol(Rol rol)
+        {
+            ejecutarSql.Connection = conexion.AbrirConexion();
+            try
+            {
+                ejecutarSql.CommandText = "UPDATE roles SET nombre_rol = @nombreRol WHERE roles_id = @idRol";
+                ejecutarSql.Parameters.Clear();
+                ejecutarSql.Parameters.AddWithValue("@idRol", rol.IdRol);
+                ejecutarSql.Parameters.AddWithValue("@nombreRol", rol.NombreRol);
+                ejecutarSql.ExecuteNonQuery();
+                conexion.CerrarConexion();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar rol: " + ex.Message);
+            }
+        }
     }
 }

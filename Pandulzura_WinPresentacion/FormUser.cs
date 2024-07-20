@@ -118,6 +118,39 @@ namespace Pandulzura_WinPresentacion
             }
         }
 
+        // Actualizar
+        public void ActualizarUsuario()
+        {
+            if (int.TryParse(txtId.Text, out int IdUser))
+            {
+                Usuario usuario = new Usuario
+                {
+                    IdUser = IdUser,
+                    RolesId = Convert.ToInt32(cbxRol.SelectedValue), // Usa SelectedValue para obtener el ID del rol
+                    NombreUser = txtNombre.Text,
+                    CedulaUser = Convert.ToInt64(txtCedula.Text),
+                    MailUser = txtMail.Text,
+                    TelefonoUser = Convert.ToInt64(txtTelefono.Text),
+                    DireccionUser = txtDireccion.Text,
+                    ContrasenaUser = txtContra.Text
+                };
+
+                if (userLogica.ActualizarUsuario(usuario))
+                {
+                    MessageBox.Show("El registro se actualizó correctamente");
+                    ListarUser();
+                }
+                else
+                {
+                    MessageBox.Show("Error al actualizar");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor ingrese un ID de usuario válido");
+            }
+        }
+
 
         public FormUser()
         {
@@ -136,6 +169,8 @@ namespace Pandulzura_WinPresentacion
             cbxRol.DisplayMember = "nombre_rol"; // Ajusta el nombre de la columna según tu tabla
             cbxRol.ValueMember = "roles_id";
         }
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -272,6 +307,11 @@ namespace Pandulzura_WinPresentacion
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             BuscarUser();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ActualizarUsuario();
         }
     }
 }

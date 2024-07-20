@@ -66,5 +66,18 @@ namespace Pandulzura_LogicaNegocio
             }
         }
 
+        public bool ActualizarUsuario(Usuario usuario)
+        {
+            try
+            {
+                usuarioDao.ActualizarUser(usuario);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error: " + ex.Message);
+            }
+        }
+
     }
 }
