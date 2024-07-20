@@ -101,33 +101,33 @@ namespace Pandulzura_WinPresentacion
             }
         }
 
-        public void ActualizarPedido()
-        {
-            try
-            {
-                Pedidos pedidoActualizado = new Pedidos
-                {
-                    PedidoId = int.Parse(txtIdPedido.Text),
-                    UsuarioId = int.Parse(cbxUser.SelectedValue.ToString()),
-                    FechaPedido = DateTime.Value,
-                    EstadoPedido = (Pedidos.Estado)Enum.Parse(typeof(Pedidos.Estado), cbxEstado.SelectedItem.ToString())
-                };
+        //public void ActualizarPedido()
+        //{
+        //    try
+        //    {
+        //        Pedidos pedidoActualizado = new Pedidos
+        //        {
+        //            PedidoId = int.Parse(txtIdPedido.Text),
+        //            UsuarioId = int.Parse(cbxUser.SelectedValue.ToString()),
+        //            FechaPedido = DateTime.Value,
+        //            EstadoPedido = (Pedidos.Estado)Enum.Parse(typeof(Pedidos.Estado), cbxEstado.SelectedItem.ToString())
+        //        };
 
-                if (pedidosLogica.ActualizarPedido(pedidoActualizado))
-                {
-                    MessageBox.Show("Pedido actualizado correctamente");
-                    ListarPedidos();
-                }
-                else
-                {
-                    MessageBox.Show("Error: No se pudo actualizar el pedido");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al actualizar pedido: " + ex.Message);
-            }
-        }
+        //        if (pedidosLogica.ActualizarPedido(pedidoActualizado))
+        //        {
+        //            MessageBox.Show("Pedido actualizado correctamente");
+        //            ListarPedidos();
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Error: No se pudo actualizar el pedido");
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error al actualizar pedido: " + ex.Message);
+        //    }
+        //}
 
         private void FormPedidos_Load(object sender, EventArgs e)
         {
@@ -153,11 +153,6 @@ namespace Pandulzura_WinPresentacion
         private void button1_Click(object sender, EventArgs e)
         {
             ListarPedidos();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ActualizarPedido();
         }
     }
 }
